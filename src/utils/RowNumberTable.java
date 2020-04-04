@@ -12,8 +12,7 @@ import javax.swing.table.*;
  *  contains the main table.
  */
 public class RowNumberTable extends JTable
-        implements ChangeListener, PropertyChangeListener, TableModelListener
-{
+        implements ChangeListener, PropertyChangeListener, TableModelListener {
     private JTable main;
     private Object[] indexes;
 
@@ -99,8 +98,7 @@ public class RowNumberTable extends JTable
         revalidate();
     }
 
-    private static class RowNumberRenderer extends DefaultTableCellRenderer
-    {
+    private static class RowNumberRenderer extends DefaultTableCellRenderer {
         public RowNumberRenderer() {
             setHorizontalAlignment(JLabel.CENTER);
         }

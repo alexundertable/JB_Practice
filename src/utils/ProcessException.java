@@ -1,12 +1,10 @@
 package utils;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 
 // Python process exception class
-public class ProcessException extends Exception{
+public class ProcessException extends Exception {
     BufferedReader error;
     public ProcessException(BufferedReader err){
         error = err;
@@ -18,6 +16,6 @@ public class ProcessException extends Exception{
             while ((s = error.readLine()) != null)
                 System.out.print(s);
         }
-        catch(IOException ex){}
+        catch(IOException ex) {} // error can't be empty
     }
 }
