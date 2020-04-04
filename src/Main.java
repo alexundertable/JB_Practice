@@ -19,7 +19,7 @@ public class Main {
             df.draw();
         }
         catch(NumberFormatException | IOException ex) {
-            System.out.print(ex.toString());
+            System.out.print("Python unexpected error (make sure pandas installed for this python interpreter)");
         }
         catch(ProcessException ex) {
             ex.printMessage();

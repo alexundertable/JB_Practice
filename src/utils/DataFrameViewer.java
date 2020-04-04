@@ -48,7 +48,7 @@ public class DataFrameViewer extends JTable {
         JFrame f = new JFrame("Data Viewer");
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setContentPane(contents);
-        f.setSize(300, 200);
+        f.setSize(700, 500);
         f.setVisible(true);
         f.setAlwaysOnTop(true);
     }
